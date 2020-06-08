@@ -1,3 +1,6 @@
+// TODO: ADD PWA SUPPORT
+// TODO: FIGURE OUT CUSTOM OFFLINE PAGE PWA
+
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -7,8 +10,6 @@ import { fetchToilets } from "./api/fetchToilets";
 
 const App = () => {
   const [locations, setLocations] = useState([]);
-
-  console.log(locations);
 
   const getPosition = async (position) => {
     let lat = position.coords.latitude;
